@@ -8,6 +8,12 @@
     border-color: rgb(47, 51, 54);
 }
 
+.wd-border-bottom {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(47, 51, 54);
+}
+
 .wd-border-top {
     border-top-width: 1px;
     border-top-style: solid;
@@ -74,4 +80,16 @@
 
 .wd-font-13 {
     font-size: 13px;
+}
+
+.wd-dimension{
+    width: max-content;
+}
+
+.wd-padding-12 {
+    padding: 12px;
+}
+
+.wd-margin-0 {
+    margin: 12px;
 }

@@ -77,3 +77,12 @@
     border-top-right-radius: 10px;
 }
 
+.wd-display-block {
+    display: block;
+}
+
+.wd-flex-container-space-around {
+    display: flex;
+    justify-content: space-between;
+}
+

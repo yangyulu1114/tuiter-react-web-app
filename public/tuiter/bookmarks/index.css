@@ -37,12 +37,12 @@
 }
 
 
-.wd-grid-col-1{
-    width: 6%;
+.wd-grid-col-left{
+    width: 5%;
     float: left;
 }
 
-.wd-grid-col-10{
+.wd-grid-col-right{
     width: 92%;
     float: left;
 }

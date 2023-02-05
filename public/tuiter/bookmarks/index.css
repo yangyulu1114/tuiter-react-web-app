@@ -1,18 +1,17 @@
 .wd-title {
     color: white;
     font-size: 20px;
-    margin: 0px;
 }
 .wd-handle {
     color: lightgray;
     font-size: 13px;
-    margin: 0px;
 }
 .wd-padding-left{
     padding-left: 16px;
 }
 
 .wd-circular-squareP{
+    width: 48px;
     border-radius:50%;
 }
 
@@ -31,4 +30,41 @@
 .wd-padding-left-12 {
     padding-left: 12px;
 }
+
+.wd-grid-row {
+    clear: both;
+    overflow:hidden;
+}
+
+
+.wd-grid-col-1{
+    width: 6%;
+    float: left;
+}
+
+.wd-grid-col-10{
+    width: 92%;
+    float: left;
+}
+
+/*.grid-col-half-page {*/
+/*    width: 5%;*/
+/*    float: left;*/
+/*}*/
+
+/*.grid-col-other-page {*/
+/*    width: 95%;*/
+/*    float: left;*/
+/*}*/
+
+/*.wd-grid-col-left-page {*/
+/*    width:50px;*/
+/*    float: left;*/
+/*}*/
+
+/*.wd-float-left {*/
+/*    float: left;*/
+/*}*/
+
+
 

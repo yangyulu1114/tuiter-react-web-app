@@ -1,0 +1,77 @@
+.wd-bg-color-black {
+    background-color: black;
+}
+
+.wd-border {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+}
+
+.wd-border-top {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgb(47, 51, 54);
+}
+
+.wd-div-style {
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-left:16px;
+    padding-right:16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    overflow:hidden;
+}
+
+.wd-color-white {
+    color:white;
+}
+
+.wd-color-light-gray{
+    color: lightgray;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-done {
+    clear: both;
+}
+
+
+.wd-margin-left-16 {
+    margin-left: 16px;
+}
+
+.wd-margin-top-12{
+    margin-top: 12px;
+}
+
+.wd-bg-color-dark-gray{
+    background-color: darkgray;
+}
+
+.wd-margin-right-12{
+    margin-right: 12px;
+}
+.wd-margin-right-16{
+    margin-right: 16px;
+}
+
+.wd-padding-16{
+    padding: 16px;
+}
+
+.wd-padding-top-12{
+    padding-top: 12px;
+}
+
+.wd-font-13 {
+    font-size: 13px;
+}

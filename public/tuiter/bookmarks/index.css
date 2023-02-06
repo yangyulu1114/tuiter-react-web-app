@@ -86,3 +86,7 @@
     justify-content: space-between;
 }
 
+.wd-a-non-decoration {
+    text-decoration:none;
+    color: black;
+}

@@ -41,3 +41,10 @@
     width: 100px;
     height: 100px;
 }
+
+.wd-flex-container {
+    display: flex;
+    margin-left: 16px;
+    margin-top: 12px;
+    justify-content: space-between;
+}

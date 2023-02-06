@@ -425,4 +425,50 @@ p#id-selector-2 {
     color: white;
 }
 
+@media (min-width: 0px)
+and (max-width: 600px) {
+    .media-query-body {
+        background-color: yellow;
+    }
+    .media-query-title {
+        background-color: green;
+        color: white;
+    }
+    .media-query-paragraph {
+        background-color: purple;
+        color: black;
+    }
+}
+@media (min-width: 600px)
+and (max-width: 800px) {
+    .media-query-body {
+        background-color: blue;
+        color: white;
+    }
+
+    .media-query-title {
+        background-color: red;
+        color: white;
+    }
+    .media-query-paragraph {
+        background-color: gray;
+        color: black;
+    }
+}
+@media (min-width: 800px)
+and (max-width: 1200px) {
+    .media-query-body {
+        background-color: yellow;
+        color: white;
+    }
+    .media-query-title {
+        background-color: red;
+        color: black;
+    }
+    .media-query-paragraph {
+        background-color: blue;
+        color: white;
+    }
+}
+
 

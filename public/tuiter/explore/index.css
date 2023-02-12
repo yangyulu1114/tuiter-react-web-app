@@ -74,6 +74,10 @@
     margin-top: 10px;
 }
 
+.wd-margin-top-override-20 {
+    margin-top: 20px;
+}
+
 .wd-margin-bottom-override {
     margin-bottom: 10px;
 }
@@ -116,6 +120,6 @@
     border-bottom-style: solid;
 }
 
-.wd-margin-left-15 {
-    margin-left: 15px;
+.wd-margin-left-10 {
+    margin-left: 10px;
 }

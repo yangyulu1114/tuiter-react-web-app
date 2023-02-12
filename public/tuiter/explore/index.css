@@ -102,3 +102,20 @@
     height: 25px;
 }
 
+.tab-color-gray{
+    color: gray;
+}
+
+.tab-color-black{
+    color: black;
+}
+
+.wd-highlight {
+    border-bottom-color: rgb(29, 155, 240);
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+}
+
+.wd-margin-left-15 {
+    margin-left: 15px;
+}

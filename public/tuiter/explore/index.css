@@ -52,6 +52,22 @@
     width: 100%;
 }
 
-.wd-bg-color-blue{
-    background-color: #0c63e4;
+.wd-color-blue{
+    color: #0c63e4;
+}
+
+.wd-bg-color-gray{
+    background: lightgray;
+}
+
+.wd-margin-left-override {
+    margin-left: 5px;
+}
+
+.wd-margin-top-override {
+    margin-top: 10px;
+}
+
+.wd-margin-bottom-override {
+    margin-bottom: 10px;
 }

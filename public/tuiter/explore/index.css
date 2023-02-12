@@ -143,3 +143,8 @@
 .wd-a-non-decoration {
     text-decoration:none;
 }
+
+.wd-border{
+    border-width: 0px;
+    border-color: #ececec;
+}

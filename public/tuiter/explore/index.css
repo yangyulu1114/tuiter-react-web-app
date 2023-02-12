@@ -148,3 +148,7 @@
     border-width: 0px;
     border-color: #ececec;
 }
+
+.wd-rounded-corners-all-around {
+    border-radius: 20px;
+}

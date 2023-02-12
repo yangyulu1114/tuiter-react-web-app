@@ -152,3 +152,7 @@
 .wd-rounded-corners-all-around {
     border-radius: 20px;
 }
+
+.wd-color-darkgray {
+    color: gray;
+}

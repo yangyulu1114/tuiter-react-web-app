@@ -63,7 +63,9 @@
 .wd-bg-color-gray{
     background: lightgray;
 }
-
+.wd-bg-color-searchbar {
+    background: #ececec;
+}
 .wd-margin-left-override {
     margin-left: 5px;
 }
@@ -91,3 +93,12 @@
 .wd-padding-left-override-5 {
     padding-left: 5px;
 }
+
+.wd-dimension-searchbar {
+    height: 45px;
+}
+
+.wd-dimension-cog {
+    height: 25px;
+}
+

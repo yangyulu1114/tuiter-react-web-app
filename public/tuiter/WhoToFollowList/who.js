@@ -1,0 +1,17 @@
+export default [
+    {   avatarIcon: 'Java_logo.jpg',
+        userName: 'Java',
+        handle: 'Java.jpg', },
+    {   avatarIcon: 'Relativity Space.jpeg',
+        userName: 'Relativity Space',
+        handle: 'relativityspace', },
+    {   avatarIcon: 'virgin.jpg',
+        userName: 'Virgin Galactic',
+        handle: 'virgingalactic', },
+    {   avatarIcon: 'NASA.JPG',
+        userName: 'NASA',
+        handle: 'NASA', },
+    {   avatarIcon: 'TESLA.JPG',
+        userName: 'Tesla',
+        handle: 'Tesla', },
+];

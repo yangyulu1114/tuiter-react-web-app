@@ -7,7 +7,7 @@ const ExploreComponent = () => {
     return(`
             <div class="row">
                 <div class="input-group">
-                    <input type="search" class="form-control rounded-pill ps-5 fa-stack me-4" placeholder = "Search Twitter">
+                    <input type="search" class="form-control rounded-pill ps-5 fa-stack me-4" placeholder = "Search Tuiter">
                     <i class="fa fa-cog fa-2x align-middle"  style="color:dodgerblue"> </i>
                     <i class="fas fa-search position-absolute ms-2 mt-2"></i>
                 </div>

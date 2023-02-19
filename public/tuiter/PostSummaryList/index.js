@@ -3,7 +3,8 @@
 import PostSummaryItem from "./PostSummaryItem.js";
 import posts from "./posts.js";
 const PostSummaryList = () => {
-     $('#wd-postSummaryList').append(`
+     // $('#wd-postSummaryList').append(`
+    return(`
     <ul class="list-group">
            <!-- continue here -->
             ${
@@ -14,5 +15,5 @@ const PostSummaryList = () => {
            </ul>
 `);
 }
-$(PostSummaryList);
-// export default PostSummaryList;
+// $(PostSummaryList);
+export default PostSummaryList;

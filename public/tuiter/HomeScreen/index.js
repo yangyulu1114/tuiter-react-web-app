@@ -12,7 +12,7 @@ $('#wd-home').append(`
    <div class="col-10 col-lg-7 col-xl-6">
 <!--        central part-->
         <ul class="list-group"> 
-            <li class="list-group-item">
+            <li class="list-group-item bg-black">
                 <div class="row">
                     <div class="col-1 p-0 ms-3">
                         <img class="rounded-circle"
@@ -24,10 +24,10 @@ $('#wd-home').append(`
                         <span class="text-muted">@elonmusk.23h</span>
                         </br>
                         <span>Amazing how about @inspiration4x mission!</span>
-                        <div class="mt-2">
-                            <img width="100%"
+                        <div class="mt-2 border border-1 border-light rounded-corners-inline">
+                            <img class="mt-1 border border-top-0 border-start-0 border-end-0 border-light" width="100%"
                             src="../../images/inspiration4x.jpg">
-                            <div class="ms-2">
+                            <div class="ms-3 mb-2">
                                 <p class="mb-2">Watch Countdown: Inspiration4 Mission to Space | Netflix Official Site</p>
                                 <span class="text-dark">From training to launch to landing, this all-access docuseries rides along with
                                  the Inspiration4 crew on the first all-civilian orbital space mission.</span></br>
@@ -37,16 +37,16 @@ $('#wd-home').append(`
                         
                         <div>
                             <ul class="list-group list-group-horizontal">
-                                <li class="list-group-item me-5">
+                                <li class="list-group-item  bg-black border-0">
                                     <i class="fa fa-comment text-muted">  4.2K</i>
                                 </li>
-                                <li class="list-group-item me-5">
+                                <li class="list-group-item ms-3 bg-black border-0">
                                     <i class="fa fa-retweet text-muted">  3.5K</i>
                                 </li>
-                                <li class="list-group-item me-5">
+                                <li class="list-group-item ms-3 bg-black border-0">
                                     <i class="fa fa-heart text-muted">  35K</i>
                                 </li>
-                                 <li class="list-group-item me-5">
+                                 <li class="list-group-item ms-3 bg-black border-0">
                                     <i class="fa fa-upload text-muted me-5"></i>
                                 </li>
                                 
@@ -56,7 +56,7 @@ $('#wd-home').append(`
                     </div>
                 </div>
             </li>
-             <li class="list-group-item">
+            <li class="list-group-item bg-black">
                 <div class="row">
                     <div class="col-1 p-0 ms-3">
                         <img class="rounded-circle"
@@ -68,10 +68,10 @@ $('#wd-home').append(`
                         <span class="text-muted">@elonmusk.23h</span>
                         </br>
                         <span>Amazing how about @inspiration4x mission!</span>
-                        <div class="mt-2">
-                            <img width="100%"
+                        <div class="mt-2 border border-1 border-light rounded-corners-inline">
+                            <img class="mt-1 border border-top-0 border-start-0 border-end-0 border-light" width="100%"
                             src="../../images/inspiration4x.jpg">
-                            <div class="ms-2">
+                            <div class="ms-3 mb-2">
                                 <p class="mb-2">Watch Countdown: Inspiration4 Mission to Space | Netflix Official Site</p>
                                 <span class="text-dark">From training to launch to landing, this all-access docuseries rides along with
                                  the Inspiration4 crew on the first all-civilian orbital space mission.</span></br>
@@ -81,16 +81,16 @@ $('#wd-home').append(`
                         
                         <div>
                             <ul class="list-group list-group-horizontal">
-                                <li class="list-group-item me-5">
+                                <li class="list-group-item  bg-black border-0">
                                     <i class="fa fa-comment text-muted">  4.2K</i>
                                 </li>
-                                <li class="list-group-item me-5">
+                                <li class="list-group-item ms-3 bg-black border-0">
                                     <i class="fa fa-retweet text-muted">  3.5K</i>
                                 </li>
-                                <li class="list-group-item me-5">
+                                <li class="list-group-item ms-3 bg-black border-0">
                                     <i class="fa fa-heart text-muted">  35K</i>
                                 </li>
-                                 <li class="list-group-item me-5">
+                                 <li class="list-group-item ms-3 bg-black border-0">
                                     <i class="fa fa-upload text-muted me-5"></i>
                                 </li>
                                 

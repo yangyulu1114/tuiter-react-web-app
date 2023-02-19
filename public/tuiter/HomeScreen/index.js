@@ -8,7 +8,7 @@ $('#wd-home').append(`
    <div class="row mt-2 mb-2">
    <div class="col-2 col-md-2 col-lg-1 col-xl-2">
 <!--    <h3>NavigationSidebar</h3>-->
-        ${NavigationSidebar()}
+        ${NavigationSidebar('Home')}
    </div>
    <div class="col-10 col-lg-7 col-xl-6">
 <!--        central part-->

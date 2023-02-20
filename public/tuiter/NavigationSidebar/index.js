@@ -8,12 +8,12 @@ const NavigationSidebar = (highlight) => {
        <i class="fab fa-twitter"></i>
      </a>
      
-     <a class="list-group-item ${highlight === 'Home' ? 'active' : ''}" href="/">
+     <a class="list-group-item ${highlight === 'Home' ? 'active' : ''}" href="../HomeScreen/index.html">
           <i class="fa fa-home align-middle mt-1}"> </i>
           <span class="align-middle ms-2 d-none d-xl-inline-block">Home</span>
      </a>
      
-      <a class="list-group-item ${highlight === 'Explore' ? 'active' : ''}" href="/">
+      <a class="list-group-item ${highlight === 'Explore' ? 'active' : ''}" href="../ExploreScreen/index.html">
            <i class="fa fa-hashtag align-middle"></i>
            <span class="align-middle d-none ms-2 d-none d-xl-inline-block">Explore</span>
      </a>

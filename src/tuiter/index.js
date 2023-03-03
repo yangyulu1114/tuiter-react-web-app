@@ -1,6 +1,8 @@
 import {Link}
     from "react-router-dom";
 import Nav from "../nav";
+import NavigationSidebar
+    from "./navigation-sidebar";
 function Tuiter() {
     return(
         <div>
@@ -8,6 +10,7 @@ function Tuiter() {
             {/*<Link to="/hello">Hello</Link> |*/}
             {/*<Link to="/tuiter">Tuiter</Link>*/}
             <Nav/>
+            <NavigationSidebar active="home"/>
             <h1>Tuiter</h1>
         </div>
     );

@@ -3,7 +3,6 @@ import React from "react";
 const PostSummaryItem = (
     {post}
 ) => {
-    console.log(post);
     return(
            <div className="list-group-item">
                  <div className="row ms-0 me-0">

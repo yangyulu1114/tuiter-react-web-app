@@ -9,9 +9,6 @@ const PostSummaryList = () => {
     console.log(postsArray);
     return(
         <ul className="list-group">
-            <li className="list-group-item">
-                <h3>Posts</h3>
-            </li>
             {
                 postsArray.map(post =>
                     <PostSummaryItem

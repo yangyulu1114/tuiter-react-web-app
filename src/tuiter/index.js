@@ -11,15 +11,17 @@ import ExploreComponent from "./explore";
 
 function Tuiter() {
     return(
-        <div>
-            {/*<Link to="/">Lab</Link> |*/}
-            {/*<Link to="/hello">Hello</Link> |*/}
-            {/*<Link to="/tuiter">Tuiter</Link>*/}
-            <Nav/>
-            <NavigationSidebar active="home"/>
-            <WhoToFollowList/>
-            <ExploreComponent/>
-            <h1>Tuiter</h1>
+        <div className="row mt-2">
+            <div className="col-3 col-md-3 col-lg-2 col-xl-2">
+                <NavigationSidebar active="explore"/>
+            </div>
+            <div className="col-9 col-md-9 col-lg-7 col-xl-6"
+                 style={{"position": "relative"}}>
+                <ExploreComponent/>
+            </div>
+            <div className="d-sm-none d-md-none d-lg-block col-lg-3 col-xl-4">
+                <WhoToFollowList/>
+            </div>
         </div>
     );
 }

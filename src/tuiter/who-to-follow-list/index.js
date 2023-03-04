@@ -4,6 +4,7 @@ import WhoToFollowListItem
     from "./who-to-follow-list-item";
 
 const WhoToFollowList = () => {
+    console.log(whoArray);
     return(
         <ul className="list-group">
             <li className="list-group-item">

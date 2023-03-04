@@ -5,6 +5,7 @@ import NavigationSidebar
     from "./navigation-sidebar";
 import WhoToFollowListItem
     from "./who-to-follow-list/who-to-follow-list-item";
+import WhoToFollowList from "./who-to-follow-list";
 
 function Tuiter() {
     return(
@@ -14,18 +15,7 @@ function Tuiter() {
             {/*<Link to="/tuiter">Tuiter</Link>*/}
             <Nav/>
             <NavigationSidebar active="home"/>
-            <WhoToFollowListItem who={{
-                userName: 'NASA', handle: 'NASA',
-                avatarIcon: 'NASA.JPG',
-            }}/>
-            <WhoToFollowListItem who={{
-                userName: 'Tesla', handle: 'tesla',
-                avatarIcon: 'TESLA.JPG',
-            }}/>
-            <WhoToFollowListItem who={{
-                userName: 'SpaceX', handle: 'SpaceX',
-                avatarIcon: 'spaceX_logo.jpg',
-            }}/>
+            <WhoToFollowList/>
             <h1>Tuiter</h1>
         </div>
     );

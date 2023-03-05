@@ -31,9 +31,9 @@ const PostItem = (
                             src={`/images/${post.image}`}/>
                             <div className="ms-3">
                                 {emptySubtitle ? '' : <p className="mb-2">{post.subtitle}</p>}
-                                {emptyContent ? '' : <div class="text-dark">{post.content}</div>}
+                                {emptyContent ? '' : <div className="text-dark">{post.content}</div>}
                             </div>
-                            {emptySource ? '' : <i class="bi bi-link text-muted mb-2 ms-3"> {post.source}</i>}
+                            {emptySource ? '' : <i className="bi bi-link text-muted mb-2 ms-3"> {post.source}</i>}
                     </div>
                     <div>
                         <ul className="list-group list-group-horizontal">

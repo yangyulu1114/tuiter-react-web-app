@@ -5,7 +5,6 @@ import "./index.css";
 import postsArray from "../post-summary-list/posts.json";
 import PostSummaryItem from "../post-summary-list/post-summary-item";
 const HomeComponent = () => {
-    console.log(posts);
     return (
         <div className="wd-font-15">
             <ul className="list-group mb-2">

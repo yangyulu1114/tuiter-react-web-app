@@ -4,7 +4,6 @@ import "./index.css";
 const PostItem = (
     {post}
 ) => {
-    console.log(post);
     let emptyTitleAfter = (post.titleAfter == null);
     let emptySubtitle = (post.subtitle == null);
     let emptyContent = (post.content == null);

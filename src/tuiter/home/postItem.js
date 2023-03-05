@@ -45,7 +45,7 @@ const PostItem = (
                             <li className="list-group-item ms-3 border-0">
                                 <i className="bi bi-suit-heart text-muted"> {post.like}</i>
                             </li>
-                            <li className="list-group-item ms-3 border-0">
+                            <li className="list-group-item ms-3 border-0 bg-transparent">
                                 <i className="bi bi-upload text-muted me-5"></i>
                             </li>
 

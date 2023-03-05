@@ -20,8 +20,8 @@ const PostItem = (
                          src={`/images/${post.userIcon}`}/>
                 </div>
                 <div className="col-10 ms-2 pe-0">
-                    <span className="me-xl-2 fw-bold">{post.userName}</span><i className="bi bi-patch-check-fill"></i>
-                    <span className="text-muted">@{post.handle}.{post.time}</span>
+                    <span className="me-xl-2 fw-bold">{post.userName}</span><i className="bi bi-patch-check-fill wd-color-blue"></i>
+                    <span className="text-muted"> @{post.handle}.{post.time}</span>
                     <br/>
                     <span>{post.titleBefore}</span><span className="text-primary"> {post.titleHighlight}</span>{emptyTitleAfter ? '' : <span>{post.titleAfter}</span>}
                     <div className="mt-2 mb-0 border border-1 border-thin rounded-corners-inline">

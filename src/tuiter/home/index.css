@@ -5,3 +5,7 @@
 .rounded-corners-inline {
     border-radius: 10px 10px 30px 30px;
 }
+
+.wd-color-blue {
+    color: dodgerblue;
+}

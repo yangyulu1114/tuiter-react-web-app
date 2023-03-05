@@ -8,7 +8,7 @@ const HomeComponent = () => {
     console.log(posts);
     return (
         <div className="wd-font-15">
-            <ul className="list-group">
+            <ul className="list-group mb-2">
                 {
                     posts.map(post =>
                         <PostItem

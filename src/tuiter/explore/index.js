@@ -3,7 +3,7 @@ import PostSummaryList from "../post-summary-list";
 import "./index.css";
 const ExploreComponent = () => {
     return(
-        <>
+        <div className="wd-font-15">
             <div className="row">
                 <div className="col-11 position-relative">
                     <input placeholder="Search Tuiter"
@@ -39,7 +39,7 @@ const ExploreComponent = () => {
                     SpaceX Starship</h1>
             </div>
             <PostSummaryList/>
-        </>
+        </div>
     );
 };
 export default ExploreComponent;

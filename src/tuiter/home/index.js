@@ -2,8 +2,6 @@ import React from "react";
 import posts from './posts.json';
 import PostItem from './postItem'
 import "./index.css";
-import postsArray from "../post-summary-list/posts.json";
-import PostSummaryItem from "../post-summary-list/post-summary-item";
 const HomeComponent = () => {
     return (
         <div className="wd-font-15">

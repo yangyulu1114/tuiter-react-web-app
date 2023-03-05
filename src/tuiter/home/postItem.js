@@ -24,9 +24,9 @@ const PostItem = (
                     <span className="text-muted">@{post.handle}.{post.time}</span>
                     <br/>
                     <span>{post.titleBefore}</span><span className="text-primary"> {post.titleHighlight}</span>{emptyTitleAfter ? '' : <span>{post.titleAfter}</span>}
-                    <div className="mt-2 border border-1 border-light rounded-corners-inline">
+                    <div className="mt-2 mb-0 border border-1 border-thin rounded-corners-inline">
                         <img
-                            className="border border-top-0 border-start-0 border-end-0 border-light rounded-corners-inline"
+                            className="border border-top-0 border-start-0 border-end-0 border-thin rounded-corners-inline"
                             width="100%"
                             src={`/images/${post.image}`}/>
                             <div className="ms-3">

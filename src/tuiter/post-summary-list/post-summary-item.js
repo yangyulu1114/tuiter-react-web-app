@@ -14,7 +14,6 @@ const PostSummaryItem = (
                             <div className="col-2 float-end align-self-center">
                                 <img className="border rounded border-0 me-5" width="100%" src={`/images/${post.image}`}/>
                             </div>
-
                  </div>
            </div>
     );

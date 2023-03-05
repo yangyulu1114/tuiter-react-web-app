@@ -6,7 +6,6 @@ import whoArray from "../who-to-follow-list/who.json";
 import WhoToFollowListItem from "../who-to-follow-list/who-to-follow-list-item";
 
 const PostSummaryList = () => {
-    console.log(postsArray);
     return(
         <ul className="list-group">
             {

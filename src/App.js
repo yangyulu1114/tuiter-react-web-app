@@ -12,7 +12,9 @@ function App() {
           <div className="container">
             {/*<h1>Hello World!</h1>*/}
               <Routes>
-                  <Route index
+                  {/*<Route index*/}
+                  {/*       element={<Labs/>}/>*/}
+                  <Route path="/*"
                          element={<Labs/>}/>
                   <Route path="/hello"
                          element={<HelloWorld/>}/>

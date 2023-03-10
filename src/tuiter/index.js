@@ -26,7 +26,7 @@ function Tuiter() {
                 {/*<ExploreComponent/>*/}
                 <Routes>
                     <Route index element={<ExploreComponent/>}/>
-                    <Route path="/home"    element={<TuitsList/>}/>
+                    <Route path="/home"    element={<HomeComponent/>}/>
                     <Route path="/explore" element={<ExploreComponent/>}/>
                 </Routes>
             </div>

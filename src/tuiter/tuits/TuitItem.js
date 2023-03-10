@@ -1,4 +1,5 @@
 import React from "react";
+import TuitStats from "./TuitStats";
 
 const TuitItem = ({tuit}) => {
     return (
@@ -14,7 +15,10 @@ const TuitItem = ({tuit}) => {
                     <span className="text-muted"> {tuit.handle}.{tuit.time}</span>
                     <br/>
                     <div>
-                    {tuit.tuit}
+                        {tuit.tuit}
+                    </div>
+                    <div>
+                        <TuitStats tuit={tuit}/>
                     </div>
                 </div>
             </div>

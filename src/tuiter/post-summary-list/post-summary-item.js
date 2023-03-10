@@ -4,7 +4,7 @@ const PostSummaryItem = (
     {post}
 ) => {
     return(
-           <div className="list-group-item">
+           <li className="list-group-item">
                  <div className="row ms-0 me-0">
                        <div className="col-10">
                            <div className="text-muted">{post.userName} .{post.time}</div>
@@ -15,7 +15,7 @@ const PostSummaryItem = (
                                 <img className="border rounded border-0 me-5" width="100%" src={`/images/${post.image}`}/>
                             </div>
                  </div>
-           </div>
+           </li>
     );
 };
 

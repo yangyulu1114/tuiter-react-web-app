@@ -10,7 +10,7 @@ const TuitStats = ({tuit}) => {
                     <i className="bi bi-repeat"></i><span className="text-muted"> {tuit.retuits}</span>
                 </li>
                 <li className="list-group-item ms-5 border-0 ps-0">
-                    <i className="bi bi-heart-fill wd-color-red"> </i><span className="text-muted">{tuit.likes}</span>
+                    {tuit.liked ? <i className="bi bi-heart-fill wd-color-red"> </i> : <i className="bi bi-heart"> </i>} <span className="text-muted">{tuit.likes}</span>
                 </li>
                 <li className="list-group-item ms-5 border-0 ps-0 bg-transparent">
                     <i className="bi bi-upload me-5"></i>

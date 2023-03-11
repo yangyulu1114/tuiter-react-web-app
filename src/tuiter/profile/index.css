@@ -1,0 +1,10 @@
+.wd-relative {
+    position: relative;
+    bottom: 50px;
+    left: 50px;
+}
+
+.wd-relative-top {
+    position: relative;
+    bottom: 25px;
+}

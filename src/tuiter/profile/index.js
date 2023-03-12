@@ -1,6 +1,7 @@
 import React from "react";
 import "./index.css"
 import {useSelector} from "react-redux";
+import {Link, useNavigate} from "react-router-dom";
 
 const ProfileComponent = () => {
     const profile = useSelector((state => state.profile));
@@ -9,6 +10,11 @@ const ProfileComponent = () => {
     const joind_year = (profile.dateJoined).split('/')[1];
     const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
+    let navigate = useNavigate();
+    const routeChange = () =>{
+        let path = `../edit-profile`;
+        navigate(path);
+    }
     return (
         <div className="border border-thin ps-2 pe-2">
             <div className="border border-light">
@@ -23,7 +29,7 @@ const ProfileComponent = () => {
                 </div>
                 <img width="100%" height="50%" src={`/images/${profile.bannerPicture}`}/>
                 <img className="rounded-circle wd-relative" width={100} src={`/images/${profile.profilePicture}`}/>
-                <button className="rounded-pill btn border float-end mt-2 me-3 ps-3 pe-3 fw-bold">
+                <button className="rounded-pill btn border float-end mt-2 me-3 ps-3 pe-3 fw-bold" onClick={routeChange}>
                     EditProfile
                 </button>
                 <div className="wd-relative-top ms-3">

@@ -1,8 +1,9 @@
 import React from "react";
-import profile from "./profile.json"
 import "./index.css"
+import {useSelector} from "react-redux";
 
 const ProfileComponent = () => {
+    const profile = useSelector((state => state.profile));
     const birth_year = (profile.dateOfBirth).split('/')[2];
     const joind_month = (profile.dateJoined).split('/')[0]
     const joind_year = (profile.dateJoined).split('/')[1];

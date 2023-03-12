@@ -30,8 +30,14 @@ const EditProfileComponent = () => {
                 </div>
                 <img width="100%" height="50%" src={`/images/${profile.bannerPicture}`}/>
                 <img className="rounded-circle wd-relative" width={100} src={`/images/${profile.profilePicture}`}/>
-                <div className="ms-3 wd-relative-top">
-                    <input value={`${profile.firstName} ${profile.lastName}`}/>
+                <div className="ms-3 me-3 wd-relative-top">
+                    <input className="form-control" value={`${profile.firstName} ${profile.lastName}`}/>
+                    <textarea value={profile.bio} placeholder="Bio"
+                              className="form-control mt-4">
+                    </textarea>
+                    <input className="form-control mt-4" value={profile.location}/>
+                    <input className="form-control mt-4" value="Website"/>
+
                 </div>
 
             </div>

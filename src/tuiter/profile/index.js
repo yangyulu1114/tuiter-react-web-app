@@ -11,6 +11,15 @@ const ProfileComponent = () => {
     return (
         <div className="border border-thin ps-2 pe-2">
             <div className="border border-light">
+                <div className="ms-2 mt-1 row">
+                    <div className="col-1">
+                        <i className="bi bi-arrow-left"></i>
+                    </div>
+                    <div className="col-10 ms-2">
+                        <span>{profile.firstName} {profile.lastName}</span><br/>
+                        <span className="text-muted wd-font-13 mt-0">{profile.tuitsCount} tweets</span>
+                    </div>
+                </div>
                 <img width="100%" height="50%" src={`/images/${profile.bannerPicture}`}/>
                 <img className="rounded-circle wd-relative" width={100} src={`/images/${profile.profilePicture}`}/>
                 <button className="rounded-pill btn border float-end mt-2 me-3 ps-3 pe-3 fw-bold">

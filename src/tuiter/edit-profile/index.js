@@ -1,15 +1,31 @@
-import React from "react";
+import React, {useState} from "react";
 import {useSelector} from "react-redux";
 import {useNavigate} from "react-router-dom";
 import "../profile/index.css"
 
 const EditProfileComponent = () => {
     const profile = useSelector((state => state.profile));
+    const[newProfile, setNewProfile] = useState(profile);
 
     let navigate = useNavigate();
     const routeChange = () =>{
         let path = `../profile`;
         navigate(path);
+    }
+
+    const onNameChange = (text) => {
+        const names = text.split(" ")
+        console.log(names.length)
+        const first = names.length > 0 ? text.split(" ")[0] : ""
+        const last = names.length > 1 ? text.split(" ")[1] : ""
+        console.log(first)
+        console.log(last)
+        setNewProfile({
+                ...newProfile,
+                firstName:first,
+                lastName:` ${last}`,
+            }
+        )
     }
     return (
         <div className="border border-thin">
@@ -31,13 +47,28 @@ const EditProfileComponent = () => {
                 <img width="100%" height="50%" src={`/images/${profile.bannerPicture}`}/>
                 <img className="rounded-circle wd-relative" width={100} src={`/images/${profile.profilePicture}`}/>
                 <div className="ms-3 me-3 wd-relative-top">
-                    <input className="form-control" value={`${profile.firstName} ${profile.lastName}`}/>
-                    <textarea value={profile.bio} placeholder="Bio"
+                    <input onChange={(e) => onNameChange(e.target.value)}
+                           className="form-control" value={`${newProfile.firstName}${newProfile.lastName}`}/>
+                    <textarea
+                        onChange={(e) => setNewProfile({
+                            ...newProfile,
+                            bio : e.target.value,
+                        })}
+                        value={newProfile.bio} placeholder="Bio"
                               className="form-control mt-4">
                     </textarea>
-                    <input className="form-control mt-4" value={profile.location}/>
-                    <input className="form-control mt-4" value="Website"/>
-
+                    <input
+                        onChange={(e) => setNewProfile({
+                            ...newProfile,
+                            location : e.target.value,
+                        })}
+                        className="form-control mt-4" placeholder="Location" value={newProfile.location}/>
+                    <input
+                        onChange={(e) => setNewProfile({
+                            ...newProfile,
+                            website : e.target.value,
+                        })}
+                        className="form-control mt-4" placeholder="Website"/>
                 </div>
 
             </div>

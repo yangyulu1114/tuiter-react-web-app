@@ -9,6 +9,28 @@
     bottom: 25px;
 }
 
+.wd-relative-top2{
+    position: relative;
+    bottom: 170px;
+}
+.wd-relative-icon1 {
+    position: relative;
+    bottom: 125px;
+    left: 75px;
+}
+
+.wd-relative-icon2 {
+    position: relative;
+    bottom: 250px;
+    left: 230px;
+}
+
+.wd-relative-icon3 {
+    position: relative;
+    bottom: 300px;
+    left: 300px;
+}
+
 .wd-30{
     width: 30px;
 }
@@ -31,4 +53,14 @@
 
 .wd-bg-color-black {
     background: black;
+}
+
+.wd-dimension-50 {
+    width: 50px;
+    height: 50px;
+}
+
+.wd-bg-gray {
+    background: gray;
+    opacity: 0.8;
 }

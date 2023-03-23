@@ -34,7 +34,7 @@ const EditProfileComponent = () => {
         <div className="border border-thin">
             <div>
                 <div className="mt-1 mb-2 row">
-                    <div className="col-1 ms-3">
+                    <div className="col-1 ms-3 pointer" onClick={routeChange}>
                         <i className="bi bi-x-lg"></i>
                     </div>
                     <div className="col-8 ms-2">
@@ -49,7 +49,16 @@ const EditProfileComponent = () => {
                 </div>
                 <img width="100%" height="50%" src={`/images/${profile.bannerPicture}`}/>
                 <img className="rounded-circle wd-relative" width={100} src={`/images/${profile.profilePicture}`}/>
-                <div className="ms-3 me-3 wd-relative-top">
+                <div className="wd-relative-icon1 wd-dimension-50 wd-bg-gray rounded-circle fs-3 d-flex justify-content-center align-items-center">
+                    <i className="bi bi-camera"></i>
+                </div>
+                <div className="wd-relative-icon2 wd-dimension-50 wd-bg-gray rounded-circle fs-3 d-flex justify-content-center align-items-center">
+                    <i className="bi bi-camera"></i>
+                </div>
+                <div className="wd-relative-icon3 wd-dimension-50 wd-bg-gray rounded-circle fs-3 d-flex justify-content-center align-items-center">
+                    <i className="bi bi-x"></i>
+                </div>
+                <div className="ms-3 me-3 wd-relative-top2">
                     <input onChange={(e) => setFullName(e.target.value)}
                            className="form-control" value={fullName}/>
                     <textarea
@@ -71,7 +80,7 @@ const EditProfileComponent = () => {
                             ...newProfile,
                             website : e.target.value,
                         })}
-                        className="form-control mt-4" placeholder="Website"/>
+                        className="form-control mt-4" placeholder="Website" value={newProfile.website}/>
                 </div>
 
             </div>

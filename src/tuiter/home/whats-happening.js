@@ -32,6 +32,7 @@ const WhatsHappening = () => {
                         <i className="bi bi-bar-chart me-3"></i>
                         <i className="bi bi-emoji-smile me-3"></i>
                         <i className="bi bi-geo-alt"></i>
+
                     </div>
                 </div>
             </div>

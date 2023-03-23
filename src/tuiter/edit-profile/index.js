@@ -1,11 +1,14 @@
 import React, {useState} from "react";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {useNavigate} from "react-router-dom";
 import "../profile/index.css"
+import {updateProfile} from "../profile/profile-reducer";
 
 const EditProfileComponent = () => {
+    const dispatch = useDispatch();
     const profile = useSelector((state => state.profile));
-    const[newProfile, setNewProfile] = useState(profile);
+    let[newProfile, setNewProfile] = useState(profile);
+    let[fullName, setFullName] = useState(`${newProfile.firstName} ${newProfile.lastName}`)
 
     let navigate = useNavigate();
     const routeChange = () =>{
@@ -13,20 +16,20 @@ const EditProfileComponent = () => {
         navigate(path);
     }
 
-    const onNameChange = (text) => {
-        const names = text.split(" ")
-        console.log(names.length)
-        const first = names.length > 0 ? text.split(" ")[0] : ""
-        const last = names.length > 1 ? text.split(" ")[1] : ""
-        console.log(first)
-        console.log(last)
-        setNewProfile({
-                ...newProfile,
-                firstName:first,
-                lastName:` ${last}`,
-            }
-        )
+    const onSave = () => {
+        const first = fullName.split(" ")[0].trim();
+        const last = fullName.split(" ")[1].trim();
+        const upDatedProfile = {
+            ...newProfile,
+            firstName:first,
+            lastName:last,
+            handle:`@${first}`
+        }
+        dispatch(updateProfile(upDatedProfile));
+        routeChange();
     }
+
+
     return (
         <div className="border border-thin">
             <div>
@@ -38,7 +41,7 @@ const EditProfileComponent = () => {
                         <span>Edit Profile</span>
                     </div>
                     <div className="col-2">
-                        <button className="rounded-pill btn border float-end wd-font-13 btn-dark ps-3 pe-3 pt-1 pb-1" onClick={routeChange}>
+                        <button className="rounded-pill btn border float-end wd-font-13 btn-dark ps-3 pe-3 pt-1 pb-1" onClick={onSave}>
                               Save
                         </button>
                     </div>
@@ -47,8 +50,8 @@ const EditProfileComponent = () => {
                 <img width="100%" height="50%" src={`/images/${profile.bannerPicture}`}/>
                 <img className="rounded-circle wd-relative" width={100} src={`/images/${profile.profilePicture}`}/>
                 <div className="ms-3 me-3 wd-relative-top">
-                    <input onChange={(e) => onNameChange(e.target.value)}
-                           className="form-control" value={`${newProfile.firstName}${newProfile.lastName}`}/>
+                    <input onChange={(e) => setFullName(e.target.value)}
+                           className="form-control" value={fullName}/>
                     <textarea
                         onChange={(e) => setNewProfile({
                             ...newProfile,

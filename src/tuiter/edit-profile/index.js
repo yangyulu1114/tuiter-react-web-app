@@ -59,28 +59,37 @@ const EditProfileComponent = () => {
                     <i className="bi bi-x"></i>
                 </div>
                 <div className="ms-3 me-3 wd-relative-top2">
-                    <input onChange={(e) => setFullName(e.target.value)}
-                           className="form-control" value={fullName}/>
-                    <textarea
+                   <label className="text-muted wd-relative-bottom-25" for="name"> Name </label>
+                    <input id = "name" onChange={(e) => setFullName(e.target.value)}
+                           className="form-control pt-4" value={fullName}/>
+
+                    <label className="text-muted wd-relative-bottom-25" for="bio"> Bio </label>
+                    <textarea id = "bio"
                         onChange={(e) => setNewProfile({
                             ...newProfile,
                             bio : e.target.value,
                         })}
-                        value={newProfile.bio} placeholder="Bio"
-                              className="form-control mt-4">
+                        value={newProfile.bio}
+                              className="form-control pt-4">
                     </textarea>
+
+                    <label className="text-muted wd-relative-bottom-25" for="location"> Location </label>
                     <input
+                        id="location"
                         onChange={(e) => setNewProfile({
                             ...newProfile,
                             location : e.target.value,
                         })}
-                        className="form-control mt-4" placeholder="Location" value={newProfile.location}/>
+                        className="form-control pt-4" value={newProfile.location}/>
+
+                    <label className="text-muted wd-relative-bottom-25" for="website"> Website </label>
+
                     <input
                         onChange={(e) => setNewProfile({
                             ...newProfile,
                             website : e.target.value,
                         })}
-                        className="form-control mt-4" placeholder="Website" value={newProfile.website}/>
+                        className="form-control pt-4" value={newProfile.website}/>
                 </div>
 
             </div>

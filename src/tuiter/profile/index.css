@@ -31,6 +31,19 @@
     left: 300px;
 }
 
+.wd-relative-bottom-25 {
+    position: relative;
+    top : 25px;
+    left : 12px;
+}
+
+
+.wd-relative-bottom-50 {
+    position: relative;
+    top : 25px;
+    left : 12px;
+}
+
 .wd-30{
     width: 30px;
 }

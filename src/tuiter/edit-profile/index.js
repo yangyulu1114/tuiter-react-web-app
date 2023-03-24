@@ -90,6 +90,16 @@ const EditProfileComponent = () => {
                             website : e.target.value,
                         })}
                         className="form-control pt-4" value={newProfile.website}/>
+
+                    <div className="mt-4">
+                    <label className="text-muted" for="birth"> Birth date </label> . <span className="text-primary">Edit</span><br/>
+                    <input type="date" value={newProfile.dateOfBirth}/>
+                    </div>
+
+                    <div className="mt-3">
+                        <i className="bi bi-arrow-right float-end fs-4"></i>
+                        <span>Switch to professional</span>
+                    </div>
                 </div>
 
             </div>

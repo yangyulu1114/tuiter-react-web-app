@@ -8,7 +8,11 @@ const EditProfileComponent = () => {
     const dispatch = useDispatch();
     const profile = useSelector((state => state.profile));
     let[newProfile, setNewProfile] = useState(profile);
-    let[fullName, setFullName] = useState(`${newProfile.firstName} ${newProfile.lastName}`)
+    let[fullName, setFullName] = useState(`${newProfile.firstName} ${newProfile.lastName}`);
+    let[editing, setEditing] = useState(false);
+    let[birthDate, setBirthDate] = useState(newProfile.dateOfBirth);
+    let birth_year = (newProfile.dateOfBirth).split('-')[0];
+
 
     let navigate = useNavigate();
     const routeChange = () =>{
@@ -29,6 +33,10 @@ const EditProfileComponent = () => {
         routeChange();
     }
 
+    const onDateChange = (value) => {
+        console.log(value)
+        setBirthDate(value)
+    }
 
     return (
         <div className="border border-thin">
@@ -59,11 +67,11 @@ const EditProfileComponent = () => {
                     <i className="bi bi-x"></i>
                 </div>
                 <div className="ms-3 me-3 wd-relative-top2">
-                   <label className="text-muted wd-relative-bottom-25" for="name"> Name </label>
+                   <label className="text-muted wd-relative-bottom-25" htmlFor="name"> Name </label>
                     <input id = "name" onChange={(e) => setFullName(e.target.value)}
                            className="form-control pt-4" value={fullName}/>
 
-                    <label className="text-muted wd-relative-bottom-25" for="bio"> Bio </label>
+                    <label className="text-muted wd-relative-bottom-25" htmlFor="bio"> Bio </label>
                     <textarea id = "bio"
                         onChange={(e) => setNewProfile({
                             ...newProfile,
@@ -73,7 +81,7 @@ const EditProfileComponent = () => {
                               className="form-control pt-4">
                     </textarea>
 
-                    <label className="text-muted wd-relative-bottom-25" for="location"> Location </label>
+                    <label className="text-muted wd-relative-bottom-25" htmlFor="location"> Location </label>
                     <input
                         id="location"
                         onChange={(e) => setNewProfile({
@@ -82,9 +90,10 @@ const EditProfileComponent = () => {
                         })}
                         className="form-control pt-4" value={newProfile.location}/>
 
-                    <label className="text-muted wd-relative-bottom-25" for="website"> Website </label>
+                    <label className="text-muted wd-relative-bottom-25" htmlFor="website"> Website </label>
 
                     <input
+                        id = "website"
                         onChange={(e) => setNewProfile({
                             ...newProfile,
                             website : e.target.value,
@@ -92,8 +101,9 @@ const EditProfileComponent = () => {
                         className="form-control pt-4" value={newProfile.website}/>
 
                     <div className="mt-4">
-                    <label className="text-muted" for="birth"> Birth date </label> . <span className="text-primary">Edit</span><br/>
-                    <input type="date" value={newProfile.dateOfBirth}/>
+                    <label className="text-muted" htmlFor="birth"> Birth date </label> . <span className="text-primary" onClick={(e) => setEditing(true)}>Edit</span><br/>
+                        {editing ? <input onChange={(e) => onDateChange(e.target.value)} type="date" value={birthDate}/> : <span className="bg-black font-color-black ">{profile.dateOfBirth}</span>}
+                        <span> {birth_year}</span>
                     </div>
 
                     <div className="mt-3">

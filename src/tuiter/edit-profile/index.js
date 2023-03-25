@@ -11,7 +11,8 @@ const EditProfileComponent = () => {
     let[fullName, setFullName] = useState(`${newProfile.firstName} ${newProfile.lastName}`);
     let[editing, setEditing] = useState(false);
     let[birthDate, setBirthDate] = useState(newProfile.dateOfBirth);
-    let birth_year = (newProfile.dateOfBirth).split('-')[0];
+    const birth_year = (newProfile.dateOfBirth).split('-')[0];
+    let[newBirthYear, setNewBirthYear] = useState(birth_year);
 
 
     let navigate = useNavigate();
@@ -27,15 +28,17 @@ const EditProfileComponent = () => {
             ...newProfile,
             firstName:first,
             lastName:last,
-            handle:`@${first}`
+            handle:`@${first}`,
+            dateOfBirth : birthDate
         }
         dispatch(updateProfile(upDatedProfile));
         routeChange();
     }
 
     const onDateChange = (value) => {
-        console.log(value)
-        setBirthDate(value)
+        setBirthDate(value);
+        setEditing(false);
+        setNewBirthYear(value.split("-")[0]);
     }
 
     return (
@@ -103,7 +106,7 @@ const EditProfileComponent = () => {
                     <div className="mt-4">
                     <label className="text-muted" htmlFor="birth"> Birth date </label> . <span className="text-primary" onClick={(e) => setEditing(true)}>Edit</span><br/>
                         {editing ? <input onChange={(e) => onDateChange(e.target.value)} type="date" value={birthDate}/> : <span className="bg-black font-color-black ">{profile.dateOfBirth}</span>}
-                        <span> {birth_year}</span>
+                        <span> {newBirthYear}</span>
                     </div>
 
                     <div className="mt-3">

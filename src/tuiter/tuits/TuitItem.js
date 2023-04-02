@@ -8,9 +8,6 @@ import {deleteTuitThunk} from "../../services/tuits-thunks";
 const TuitItem = ({tuit}) => {
     console.log(tuit)
     const dispatch = useDispatch();
-    const deleteTuitHandler = (id) => {
-        dispatch(deleteTuitThunk(id));
-    }
 
     return (
         <li className="list-group-item">

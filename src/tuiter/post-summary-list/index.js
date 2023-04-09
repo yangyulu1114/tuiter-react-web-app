@@ -5,7 +5,6 @@ import {useDispatch, useSelector} from "react-redux";
 import {findTuitsThunk} from "../../services/tuits-thunks";
 
 const PostSummaryList = () => {
-    // const postsArray = useSelector(state => state.tuits)
     const {tuits, loading} = useSelector(
         state => state.tuitsData)
     const dispatch = useDispatch();
